@@ -5,7 +5,7 @@ function Pokemon(props) {
   const handleClick = (pokemon)=>{
     console.log(pokemon);
   }
-
+  
   return (
     <>
       {props.pokemon.map(pokemon => (
