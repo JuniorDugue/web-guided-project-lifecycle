@@ -17,8 +17,8 @@ class App extends React.Component {
     setTimeout(()=>{
       this.setState({
         pokemon:data
-      }), 3000);
-    });
+      });
+      }, 3000);
   }
 
   render() {
