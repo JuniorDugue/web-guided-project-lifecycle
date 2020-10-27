@@ -2,10 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Pokemon(props) {
+  const handleClick = (pokemon)=>{
+    console.log(pokemon);
+  }
+
   return (
     <>
       {props.pokemon.map(pokemon => (
-        <div key={pokemon.id} className="pokemon" onClick={handleClick}>
+        <div key={pokemon.id} className="pokemon" onClick={()=>{
+          handleClick(pokemon);
+        }}>
           <img src={pokemon.img} alt={pokemon.name} />
           <div>
             <h3>{pokemon.name}</h3>
