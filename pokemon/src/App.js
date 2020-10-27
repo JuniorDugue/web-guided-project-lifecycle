@@ -21,6 +21,10 @@ class App extends React.Component {
       }, 3000);
   }
 
+  componentDidUpdate(prevProps, prevState) {
+
+  }
+
   render() {
     return (
       <div className="App">
