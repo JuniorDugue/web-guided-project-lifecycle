@@ -9,8 +9,14 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      pokemon: data
+      pokemon: []
     };
+  }
+
+  componentDidMount() {
+    this.setState({
+      pokemon:data
+    });
   }
 
   render() {
