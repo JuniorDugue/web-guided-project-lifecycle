@@ -6,12 +6,9 @@ import './styles.scss';
 import Pokemon from './components/Pokemon';
 
 class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      pokemon: []
-    };
-  }
+  state = {
+    pokemon: []
+  };
 
   componentDidMount() {
     setTimeout(()=>{
@@ -22,7 +19,7 @@ class App extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    if (prevState.pokemon.length < this.state.pokemon.length){
+    if (prevState.pokemon.length < this.state.pokemon.length) {
       console.log("We have loaded pokemon");
     }
   }
