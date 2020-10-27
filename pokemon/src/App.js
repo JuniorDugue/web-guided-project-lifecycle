@@ -21,7 +21,7 @@ class App extends React.Component {
       console.log("We have loaded pokemon");
     }
   }
-
+  
   render() {
     return (
       <div className="App">
