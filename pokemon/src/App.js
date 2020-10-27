@@ -11,11 +11,9 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    setTimeout(()=>{
-      this.setState({
-        pokemon:data
-      });
-      }, 3000);
+    this.setState({
+      pokemon:data
+    });
   }
 
   componentDidUpdate(prevProps, prevState) {
