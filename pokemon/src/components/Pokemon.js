@@ -5,7 +5,7 @@ function Pokemon(props) {
   return (
     <>
       {props.pokemon.map(pokemon => (
-        <div key={pokemon.id} className="pokemon">
+        <div key={pokemon.id} className="pokemon" onClick={handleClick}>
           <img src={pokemon.img} alt={pokemon.name} />
           <div>
             <h3>{pokemon.name}</h3>
