@@ -22,7 +22,9 @@ class App extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-
+    if (prevState.pokemon.length > this.state.pokemon.length){
+      console.log("We have loaded pokemon");
+    }
   }
 
   render() {
